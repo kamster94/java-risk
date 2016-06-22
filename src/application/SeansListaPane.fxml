@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="389.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SeansListaPaneController">
+   <top>
+      <FlowPane alignment="CENTER" prefHeight="34.0" prefWidth="475.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="card-subtitle" text="%seanslista_title" />
+         </children>
+      </FlowPane>
+   </top>
+   <center>
+      <FlowPane prefHeight="322.0" prefWidth="475.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableFilms" prefHeight="292.0" prefWidth="524.0">
+              <columns>
+                <TableColumn fx:id="columnTitle" prefWidth="199.0" text="%seans_film" />
+                <TableColumn fx:id="columnTyp" prefWidth="116.0" text="%seans_type" />
+                  <TableColumn fx:id="columnData" prefWidth="107.0" text="%seans_date" />
+                  <TableColumn fx:id="columnKino" prefWidth="40.0" text="%seans_cinema" />
+                  <TableColumn fx:id="columnSala" minWidth="0.0" prefWidth="59.0" text="%seans_sala" />
+              </columns>
+            </TableView>
+         </children>
+      </FlowPane>
+   </center>
+   <bottom>
+      <FlowPane alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="475.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buttonNewSeans" mnemonicParsing="false" onAction="#doNewSeans" text="%seanslista_new">
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button fx:id="buttonEdit" mnemonicParsing="false" onAction="#doEdit" text="%seans_edit">
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </Button>
+         </children>
+      </FlowPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.FlowPane?>
+
+<FlowPane prefHeight="390.0" prefWidth="367.0" styleClass="card" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ChangeLoginController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="367.0" text="%changelogin_title">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Separator prefHeight="18.0" prefWidth="364.0" />
+      <TextArea editable="false" prefHeight="117.0" prefWidth="365.0" text="%changelogin_desc" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Separator orientation="VERTICAL" prefHeight="42.0" prefWidth="79.0" visible="false" />
+      <TextField fx:id="fieldEmail" prefHeight="39.0" prefWidth="223.0" promptText="E-mail">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Separator orientation="VERTICAL" prefHeight="40.0" prefWidth="79.0" visible="false" />
+      <PasswordField fx:id="fieldPassword" promptText="%changelogin_password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <Separator prefHeight="14.0" prefWidth="362.0" />
+      <Separator orientation="VERTICAL" prefHeight="26.0" prefWidth="35.0" />
+      <Button fx:id="buutonCofnij" contentDisplay="CENTER" mnemonicParsing="false" onAction="#cofnij" prefHeight="31.0" prefWidth="111.0" text="%changelogin_cancel" />
+      <Separator orientation="VERTICAL" prefHeight="49.0" prefWidth="73.0" />
+      <Button fx:id="buttonZatwierdz" contentDisplay="CENTER" mnemonicParsing="false" onAction="#zmienLogin" prefHeight="31.0" prefWidth="110.0" text="%changelogin_confirm" />
+   </children>
+</FlowPane>

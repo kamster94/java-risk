@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="390.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BiletHistoryPaneController">
+   <top>
+      <FlowPane alignment="CENTER" prefHeight="34.0" prefWidth="475.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="card-subtitle" text="%histicket_title" />
+         </children>
+      </FlowPane>
+   </top>
+   <center>
+      <FlowPane prefHeight="322.0" prefWidth="475.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableBilet" prefHeight="354.0" prefWidth="525.0">
+              <columns>
+                <TableColumn fx:id="columnTitle" prefWidth="118.0" text="%ticket_film" />
+                <TableColumn fx:id="columnTyp" prefWidth="94.0" text="%ticket_type" />
+                  <TableColumn fx:id="columnData" prefWidth="120.0" text="%ticket_date" />
+                  <TableColumn fx:id="columnKino" prefWidth="44.0" text="%ticket_cinema" />
+                  <TableColumn fx:id="columnSala" minWidth="0.0" prefWidth="49.0" text="%ticket_sala" />
+                  <TableColumn fx:id="columnSeat" prefWidth="99.0" text="%ticket_seat" />
+              </columns>
+            </TableView>
+         </children>
+      </FlowPane>
+   </center>
+</BorderPane>

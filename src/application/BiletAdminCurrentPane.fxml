@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="389.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BiletAdminCurrentPaneController">
+   <top>
+      <FlowPane alignment="CENTER" prefHeight="34.0" prefWidth="475.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="card-subtitle" text="%ticketadmincurr_title" />
+         </children>
+      </FlowPane>
+   </top>
+   <center>
+      <FlowPane prefHeight="268.0" prefWidth="475.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableBilet" prefHeight="287.0" prefWidth="524.0">
+              <columns>
+                <TableColumn fx:id="columnTitle" prefWidth="152.0" text="%ticket_film" />
+                <TableColumn fx:id="columnTyp" prefWidth="110.0" text="%ticket_type" />
+                  <TableColumn fx:id="columnData" prefWidth="106.0" text="%ticket_date" />
+                  <TableColumn fx:id="columnKino" prefWidth="43.0" text="%ticket_cinema" />
+                  <TableColumn fx:id="columnSala" minWidth="0.0" prefWidth="36.0" text="%ticket_sala" />
+                  <TableColumn fx:id="columnSeat" prefWidth="74.0" text="%ticket_seat" />
+              </columns>
+            </TableView>
+         </children>
+      </FlowPane>
+   </center>
+   <bottom>
+      <FlowPane alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="475.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buttonInfoCustomer" mnemonicParsing="false" onAction="#doCustomer" text="%ticketadmin_about">
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </Button>
+         </children>
+      </FlowPane>
+   </bottom>
+</BorderPane>

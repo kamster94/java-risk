@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="295.0" prefWidth="343.0" styleClass="card" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserInfoController">
+   <top>
+      <FlowPane alignment="CENTER" prefHeight="54.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="card-title" text="%customer_title" />
+         </children>
+      </FlowPane>
+   </top>
+   <center>
+      <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <FlowPane alignment="TOP_CENTER" prefHeight="164.0" prefWidth="195.0">
+               <children>
+                  <Text fx:id="textName" strokeType="OUTSIDE" strokeWidth="0.0" text="Imię i nazwisko" textAlignment="CENTER" wrappingWidth="194.13671875" />
+                  <Text fx:id="textDate" strokeType="OUTSIDE" strokeWidth="0.0" text="Data urodzenia" textAlignment="CENTER" wrappingWidth="194.13671875" />
+                  <Text fx:id="textEmail" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" textAlignment="CENTER" wrappingWidth="194.13671875" />
+                  <Text fx:id="textPhone" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefon" textAlignment="CENTER" wrappingWidth="194.13671875" />
+                  <Text fx:id="textAdress" strokeType="OUTSIDE" strokeWidth="0.0" text="Ulica" textAlignment="CENTER" wrappingWidth="194.13671875" />
+                  <Text fx:id="textCity" strokeType="OUTSIDE" strokeWidth="0.0" text="Miasto" textAlignment="CENTER" wrappingWidth="194.13671875" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </FlowPane>
+         </children>
+      </FlowPane>
+   </center>
+   <bottom>
+      <FlowPane alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="343.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buttonClose" mnemonicParsing="false" onAction="#doClose" styleClass="button-flat" text="%customer_close">
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </Button>
+         </children>
+      </FlowPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane prefHeight="451.0" prefWidth="444.0" styleClass="card" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NewAccountController">
+   <top>
+      <FlowPane alignment="TOP_CENTER" prefHeight="434.0" prefWidth="444.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="439.0" styleClass="card-title" text="%newaccount_title">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Separator prefHeight="21.0" prefWidth="444.0">
+               <FlowPane.margin>
+                  <Insets />
+               </FlowPane.margin></Separator>
+            <TextField fx:id="fieldImie" prefHeight="39.0" prefWidth="290.0" promptText="%newaccount_name" />
+            <TextField fx:id="fieldNazwisko" prefHeight="39.0" prefWidth="290.0" promptText="%newaccount_surname" />
+            <TextField fx:id="fieldDataUr" prefHeight="39.0" prefWidth="290.0" promptText="%newaccount_date" />
+            <TextField fx:id="fieldEmail" prefHeight="39.0" prefWidth="290.0" promptText="%newaccount_email" />
+            <PasswordField fx:id="fieldPassword" prefHeight="39.0" prefWidth="290.0" promptText="%newaccount_password" />
+            <TextField fx:id="fieldMiasto" prefHeight="39.0" prefWidth="290.0" promptText="%newaccount_city" />
+            <TextField fx:id="fieldUlica" prefHeight="39.0" prefWidth="290.0" promptText="%newaccount_street" />
+            <TextField fx:id="fieldTelefon" prefHeight="39.0" prefWidth="290.0" promptText="%newaccount_phone" />
+            <Separator prefHeight="25.0" prefWidth="443.0">
+               <FlowPane.margin>
+                  <Insets top="10.0" />
+               </FlowPane.margin></Separator>
+         </children>
+      </FlowPane>
+   </top>
+   <bottom>
+      <FlowPane alignment="CENTER" prefHeight="47.0" prefWidth="444.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buttonCofnij" alignment="CENTER" mnemonicParsing="false" onAction="#cancelRegistration" prefHeight="39.0" prefWidth="125.0" text="%newaccount_back">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Separator orientation="VERTICAL" prefHeight="44.0" prefWidth="135.0" />
+            <Button fx:id="buttonZatwierdz" mnemonicParsing="false" onAction="#proceedRegistration" prefHeight="39.0" prefWidth="133.0" text="%newaccount_confirm">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </FlowPane>
+   </bottom>
+</BorderPane>

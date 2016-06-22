@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="336.0" maxWidth="329.0" minHeight="200.0" minWidth="200.0" prefHeight="336.0" prefWidth="329.0" styleClass="card" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <center>
+      <FlowPane alignment="TOP_CENTER" prefHeight="289.0" prefWidth="222.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="card-title" text="%login_title" textAlignment="CENTER" wrappingWidth="249.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <FlowPane alignment="CENTER" prefHeight="98.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="fieldEmail" prefHeight="25.0" prefWidth="180.0" promptText="Email" />
+                  <PasswordField fx:id="fieldPassword" prefHeight="25.0" prefWidth="180.0" promptText="%login_password" />
+                  <Button fx:id="buttonLogin" mnemonicParsing="false" onAction="#doLogin" styleClass="button-flat" text="%login_login" />
+               </children>
+            </FlowPane>
+            <FlowPane prefHeight="91.0" prefWidth="230.0">
+               <children>
+                  <Button fx:id="buttonRegister" mnemonicParsing="false" onAction="#registerUser" prefHeight="25.0" prefWidth="230.0" styleClass="button-flat" text="%login_create">
+                     <FlowPane.margin>
+                        <Insets />
+                     </FlowPane.margin>
+                  </Button>
+                  <Button fx:id="buttonSkip" mnemonicParsing="false" onAction="#skipLogin" prefHeight="25.0" prefWidth="230.0" styleClass="button-flat" text="%login_skip" />
+               </children>
+            </FlowPane>
+         </children>
+      </FlowPane>
+   </center>
+   <bottom>
+      <FlowPane alignment="CENTER" prefHeight="46.0" prefWidth="297.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buttonLang" mnemonicParsing="false" onAction="#doLang" text="%lang" />
+         </children>
+      </FlowPane>
+   </bottom>
+</BorderPane>
